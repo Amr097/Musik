@@ -6,7 +6,7 @@
 
 @import "layouts/sidebar";
 @import "layouts/header";
-
+@import "layouts/main";
 
 @import "base/typography";
 
@@ -54,17 +54,9 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: $font-primary;
   display: grid;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: max-content 1fr;
   background-color: $bg-color-1;
-}
-
-main {
-  width: 93.5%;
-  margin: 0 auto;
-
-  @media screen and (width< 50em) {
-    width: 100%;
-  }
 }
 
 a {
@@ -85,7 +77,7 @@ h6 {
 img,
 video,
 canvas {
-  max-width: 100%;
+  //max-width: 100%;
 }
 
 svg {

@@ -2,6 +2,11 @@
   font-weight: lighter;
 }
 
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 .listen-btn {
   isolation: isolate;
   position: relative;
@@ -11,6 +16,7 @@
   font-family: "Work Sans", sans-serif;
   border-radius: 1.2rem;
   font-size: 1.2rem;
+  font-weight: bolder;
   cursor: pointer;
   color: white;
   transition: all 0.25s ease-in-out;
@@ -24,6 +30,12 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transform: translateY(0);
   transition: all 0.15s linear;
+}
+
+.btn-purple {
+  color: #7c74ee;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .search {
@@ -192,6 +204,88 @@
   padding: 3.2rem;
 }
 
+main {
+  grid-column: 2/-1;
+  grid-row: 2/-1;
+  padding: 3.2rem;
+  width: 100%;
+}
+main ::-webkit-scrollbar {
+  width: 1rem;
+  height: 0.9rem;
+}
+main ::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+main ::-webkit-scrollbar-thumb {
+  display: block;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(70, 186, 199, 0.1803921569) 3.26%, rgba(68, 137, 216, 0.1176470588) 56.45%, rgba(134, 104, 242, 0.1254901961) 97.83%);
+  width: 8px;
+  height: 8px;
+  background-clip: content-box;
+}
+main ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #3dc3c0 -15.19%, #8568f5 111.92%);
+  box-shadow: inset 2px 2px 5px 0 rgba(255, 255, 255, 0.5);
+}
+main .recommended__container {
+  margin-top: 2.4rem;
+}
+main .recommended__list {
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+  overflow-x: scroll;
+  padding-bottom: 2rem;
+}
+main .recommended__item {
+  padding: 1rem;
+  position: relative;
+  transition: 0.2s ease-in-out;
+}
+main .recommended__item:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+main .recommended__figure .recommended__link {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .recommended__image {
+  width: 17.5rem;
+  height: 17.5rem;
+  border-radius: 1.2rem;
+  object-fit: cover;
+}
+main .recommended__icon {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.7rem;
+  position: absolute;
+  right: 2rem;
+  bottom: 8rem;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+main .recommended__icon:hover {
+  transform: translateY(-1px);
+}
+main .recommended__icon svg {
+  object-fit: contain;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+main .recommended__caption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
 .logo__text {
   display: inline-block;
   background: linear-gradient(90deg, #46bbc7 3.26%, #4488d8 56.45%, #8768f2 97.83%);
@@ -207,6 +301,18 @@
 
 .font-secondary {
   font-size: 1.6rem;
+}
+
+.font-tertiary {
+  font-size: 1.3rem;
+}
+
+.f-grey {
+  color: #6b6b6b;
+}
+
+.f-weight-500 {
+  font-weight: 500;
 }
 
 html {
@@ -257,18 +363,9 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: "Montserrat", sans-serif;
   display: grid;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: max-content 1fr;
   background-color: white;
-}
-
-main {
-  width: 93.5%;
-  margin: 0 auto;
-}
-@media screen and (width < 50em) {
-  main {
-    width: 100%;
-  }
 }
 
 a {
@@ -284,12 +381,6 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-}
-
-img,
-video,
-canvas {
-  max-width: 100%;
 }
 
 svg {
