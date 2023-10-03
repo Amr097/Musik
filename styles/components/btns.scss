@@ -1,0 +1,26 @@
+.listen-btn {
+  isolation: isolate;
+  position: relative;
+  align-self: center;
+  padding: 1rem 1.3rem;
+  background: $gradient-secondary-2;
+  font-family: $font-secondary;
+  border-radius: 1.2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    border-radius: 1.2rem;
+    box-shadow: inset 0px 0px 0.5px 0 #8768f2, inset 30px 0px 0px 0px #46bbc7,
+      inset 70px 0px 0px 0px #4488d8, rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: translateY(-1.5px);
+  }
+
+  &:active {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform: translateY(0);
+    transition: all 0.15s linear;
+  }
+}

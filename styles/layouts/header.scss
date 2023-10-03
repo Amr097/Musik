@@ -1,0 +1,9 @@
+.header {
+  grid-column: 2/-1;
+  grid-row: 1 / span 1;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-column-gap: 2rem;
+  height: max-content;
+  padding: 3.2rem;
+}

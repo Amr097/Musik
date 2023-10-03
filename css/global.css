@@ -1,0 +1,313 @@
+.t-light {
+  font-weight: lighter;
+}
+
+.listen-btn {
+  isolation: isolate;
+  position: relative;
+  align-self: center;
+  padding: 1rem 1.3rem;
+  background: linear-gradient(90deg, #3dc3c0 -15.19%, #8568f5 111.92%);
+  font-family: "Work Sans", sans-serif;
+  border-radius: 1.2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+  transition: all 0.25s ease-in-out;
+}
+.listen-btn:hover {
+  border-radius: 1.2rem;
+  box-shadow: inset 0px 0px 0.5px 0 #8768f2, inset 30px 0px 0px 0px #46bbc7, inset 70px 0px 0px 0px #4488d8, rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: translateY(-1.5px);
+}
+.listen-btn:active {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transform: translateY(0);
+  transition: all 0.15s linear;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  border: solid 1px #b9b9b9;
+  border-radius: 1rem;
+  padding: 0 1rem;
+}
+.search__input {
+  width: 90%;
+  background-color: transparent;
+  border: none;
+  padding: 1.2rem;
+  transition: all 0.35s ease-in-out;
+  margin-right: -2rem;
+  display: flex;
+  align-items: center;
+}
+.search__input:focus {
+  width: 100%;
+  outline: none;
+}
+.search__input:focus + .search__button {
+  transform: translateX(-2rem);
+  border-radius: 0;
+  transition-delay: 0;
+}
+.search__input::placeholder {
+  display: flex;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #b5b5b5;
+}
+.search__button {
+  border: none;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  transition: 0.2s linear;
+  transition-delay: 0.2s;
+}
+.search__button:focus {
+  outline: none;
+  transform: scale(0.98);
+}
+.search__button svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.sidebar {
+  font-size: 2.4rem;
+  grid-column: 1/span 1;
+  grid-row: 1/-1;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.12);
+  height: 100vh;
+  height: 100%;
+  padding: 3.2rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+.sidebar .logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  padding-bottom: 0.5em;
+}
+.sidebar .logo__strokes--front, .sidebar .logo__strokes--back {
+  flex-direction: column;
+  align-items: center;
+  transform: rotate(-90deg);
+}
+.sidebar .logo__strokes--front li:nth-child(2), .sidebar .logo__strokes--back li:nth-child(2) {
+  width: calc(1.6em / 1.3);
+}
+.sidebar .logo__strokes--front li:nth-child(3), .sidebar .logo__strokes--back li:nth-child(3) {
+  width: calc(1.6em / 1.95);
+}
+.sidebar .logo__strokes--front li:nth-child(4), .sidebar .logo__strokes--back li:nth-child(4) {
+  width: calc(1.6em / 2.6);
+}
+.sidebar .logo__strokes--front li, .sidebar .logo__strokes--back li {
+  width: 1.6em;
+  height: 0.23em;
+  background: linear-gradient(90deg, #39cabd 0%, #4ab5ca 66.77%);
+  border-radius: 3px;
+}
+.sidebar .logo__strokes--front li:last-of-type, .sidebar .logo__strokes--back li:last-of-type {
+  width: 0.3em;
+}
+.sidebar .logo__strokes--front {
+  display: flex;
+  z-index: 1;
+  height: fit-content;
+  padding: 0;
+}
+.sidebar .logo__strokes--front li {
+  border: solid 0.04em white;
+}
+.sidebar .logo__strokes--back {
+  display: flex;
+  position: absolute;
+  left: 0.22em;
+  top: 0.8em;
+}
+.sidebar .logo__strokes--back li {
+  border: solid 0.04em white;
+}
+.sidebar .nav {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.sidebar .nav .nav__list {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+}
+.sidebar .nav .nav__list--title {
+  margin: 1rem 0;
+}
+.sidebar .nav .nav__list--item {
+  padding: 2rem 2.4rem;
+  position: relative;
+  border-radius: 1.2rem;
+}
+.sidebar .nav .nav__list--item::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 1.2rem;
+  background: linear-gradient(90deg, #3dc3c0 -15.19%, #8568f5 111.92%);
+  inset: 0;
+  scale: 1 0;
+  transition: all 350ms;
+  transform-origin: top;
+}
+.sidebar .nav .nav__list--item a {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.sidebar .nav .nav__list--item a svg {
+  fill: none;
+}
+.sidebar .nav .nav__list--item:hover a {
+  color: white;
+}
+.sidebar .nav .nav__list--item:hover a svg {
+  fill: white;
+}
+.sidebar .nav .nav__list--item:hover::after, .sidebar .nav .nav__list--item:focus-visible::after {
+  scale: 1 1;
+  transform-origin: bottom;
+}
+
+.header {
+  grid-column: 2/-1;
+  grid-row: 1/span 1;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-column-gap: 2rem;
+  height: max-content;
+  padding: 3.2rem;
+}
+
+.logo__text {
+  display: inline-block;
+  background: linear-gradient(90deg, #46bbc7 3.26%, #4488d8 56.45%, #8768f2 97.83%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1.92px;
+}
+
+.font-primary {
+  font-size: 2.4rem;
+}
+
+.font-secondary {
+  font-size: 1.6rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+@media screen and (width > 137.75em) {
+  html {
+    font-size: 90%;
+  }
+}
+@media screen and (width > 118.75em) {
+  html {
+    font-size: 68%;
+  }
+}
+@media screen and (width < 79em) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (width < 61.125em) {
+  html {
+    font-size: 40%;
+  }
+}
+@media screen and (width < 25em) {
+  html {
+    font-size: 35%;
+  }
+}
+@media screen and (width < 20em) {
+  html {
+    font-size: 30%;
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  background-color: white;
+}
+
+main {
+  width: 93.5%;
+  margin: 0 auto;
+}
+@media screen and (width < 50em) {
+  main {
+    width: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas {
+  max-width: 100%;
+}
+
+svg {
+  width: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+a {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=global.css.map */

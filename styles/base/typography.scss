@@ -1,0 +1,16 @@
+.logo__text {
+  display: inline-block;
+  background: $gradient-secondary;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1.92px;
+}
+
+.font-primary {
+  font-size: 2.4rem;
+}
+
+.font-secondary {
+  font-size: 1.6rem;
+}

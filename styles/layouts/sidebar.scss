@@ -1,0 +1,128 @@
+.sidebar {
+  font-size: 2.4rem;
+  grid-column: 1 / span 1;
+  grid-row: 1/-1;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.12);
+  height: 100vh;
+  height: 100%;
+  padding: 3.2rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+
+  .logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    padding-bottom: 0.5em;
+
+    &__strokes {
+      &--front,
+      &--back {
+        flex-direction: column;
+        align-items: center;
+        transform: rotate(-90deg);
+
+        @for $i from 2 through 4 {
+          li:nth-child(#{$i}) {
+            width: calc(1.6em / #{$i * 0.65});
+          }
+        }
+        li {
+          width: 1.6em;
+          height: 0.23em;
+          background: $gradient-primary;
+          border-radius: 3px;
+          &:last-of-type {
+            width: 0.3em;
+          }
+        }
+      }
+
+      &--front {
+        display: flex;
+        z-index: 1;
+        height: fit-content;
+        padding: 0;
+
+        li {
+          border: solid 0.04em white;
+        }
+      }
+
+      &--back {
+        display: flex;
+        position: absolute;
+        left: 0.22em;
+        top: 0.8em;
+        li {
+          border: solid 0.04em white;
+        }
+      }
+    }
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .nav {
+      &__list {
+        display: flex;
+        flex-direction: column;
+        transition: all 0.2s ease-in-out;
+
+        &--title {
+          margin: 1rem 0;
+        }
+
+        &--item {
+          padding: 2rem 2.4rem;
+          position: relative;
+          border-radius: 1.2rem;
+
+          &::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            border-radius: 1.2rem;
+            background: linear-gradient(
+              90deg,
+              #3dc3c0 -15.19%,
+              #8568f5 111.92%
+            );
+            inset: 0;
+            scale: 1 0;
+            transition: all 350ms;
+            transform-origin: top;
+          }
+
+          a {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+
+            svg {
+              fill: none;
+            }
+          }
+
+          &:hover a {
+            color: white;
+            svg {
+              fill: white;
+            }
+          }
+
+          &:hover::after,
+          &:focus-visible::after {
+            scale: 1 1;
+            transform-origin: bottom;
+          }
+        }
+      }
+    }
+  }
+}

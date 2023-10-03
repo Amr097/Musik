@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/global.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <form class="search">
+        <button class="search__button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+              stroke="#ACACAC"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M22 22L20 20"
+              stroke="#ACACAC"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <input
+          class="search__input"
+          type="text"
+          placeholder="Search artist, title, album"
+        />
+      </form>
+      <button class="listen-btn">Listen Now !</button>
+    </header>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <ul class="logo__strokes--front">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <ul class="logo__strokes--back">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <h1 class="logo__text">
+          <a href="#"> Musi<span class="t-light">verse</span></a>
+        </h1>
+      </div>
+      <!--Sidebar Navigation -->
+      <nav class="nav">
+        <!-- Navigation List 1 -->
+        <ul class="nav__list">
+          <h2 class="nav__list--title font-primary">Discover</h2>
+          <li class="nav__list--item font-secondary">
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M16.7001 5.68333L11.9001 2.325C10.5918 1.40833 8.58345 1.45833 7.32511 2.43333L3.15011 5.69167C2.31678 6.34167 1.65845 7.675 1.65845 8.725V14.475C1.65845 16.6 3.38345 18.3333 5.50845 18.3333H14.4918C16.6168 18.3333 18.3418 16.6083 18.3418 14.4833V8.83333C18.3418 7.70833 17.6168 6.325 16.7001 5.68333ZM10.6251 15C10.6251 15.3417 10.3418 15.625 10.0001 15.625C9.65845 15.625 9.37511 15.3417 9.37511 15V12.5C9.37511 12.1583 9.65845 11.875 10.0001 11.875C10.3418 11.875 10.6251 12.1583 10.6251 12.5V15Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Home</a
+            >
+          </li>
+          <li class="nav__list--item font-secondary">
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 15.8333C12.7583 15.8333 15 13.5917 15 10.8333V6.66667C15 3.90833 12.7583 1.66667 10 1.66667C7.24167 1.66667 5 3.90833 5 6.66667V10.8333C5 13.5917 7.24167 15.8333 10 15.8333Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2.5 9.16667V10.8333C2.5 14.975 5.85833 18.3333 10 18.3333C14.1417 18.3333 17.5 14.975 17.5 10.8333V9.16667"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.59155 6.23333C9.07489 5.69167 10.6916 5.69167 12.1749 6.23333"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.3584 8.73333C9.3584 8.45833 10.4167 8.45833 11.4167 8.73333"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Artist</a
+            >
+          </li>
+          <li class="nav__list--item font-secondary">
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M18.3334 10.8333V14.1667C18.3334 17.0833 16.6667 18.3333 14.1667 18.3333H5.83341C3.33341 18.3333 1.66675 17.0833 1.66675 14.1667V10.8333C1.66675 8.625 2.62508 7.37502 4.16675 6.90002C4.66675 6.74169 5.22508 6.66667 5.83341 6.66667H14.1667C14.7751 6.66667 15.3334 6.74169 15.8334 6.90002C17.3751 7.37502 18.3334 8.625 18.3334 10.8333Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.8334 5.83333V6.90002C15.3334 6.74169 14.7751 6.66667 14.1667 6.66667H5.83341C5.22508 6.66667 4.66675 6.74169 4.16675 6.90002V5.83333C4.16675 4.91667 4.91675 4.16667 5.83341 4.16667H14.1667C15.0834 4.16667 15.8334 4.91667 15.8334 5.83333Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13.3334 2.92501V4.16667H6.66675V2.92501C6.66675 2.23334 7.23342 1.66667 7.92509 1.66667H12.0751C12.7667 1.66667 13.3334 2.23334 13.3334 2.92501Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.55826 16.2083C8.16577 16.2083 8.65826 15.7159 8.65826 15.1083C8.65826 14.5008 8.16577 14.0083 7.55826 14.0083C6.95074 14.0083 6.45825 14.5008 6.45825 15.1083C6.45825 15.7159 6.95074 16.2083 7.55826 16.2083Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12.7081 14.375V10.0667C12.7081 9.15 12.1331 9.01667 11.5498 9.18333L9.3415 9.78331C8.9415 9.89164 8.6665 10.2083 8.6665 10.6666V11.4333V11.95V15.1083"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11.6083 15.475C12.2158 15.475 12.7083 14.9825 12.7083 14.375C12.7083 13.7675 12.2158 13.275 11.6083 13.275C11.0008 13.275 10.5083 13.7675 10.5083 14.375C10.5083 14.9825 11.0008 15.475 11.6083 15.475Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.6665 11.9583L12.7081 10.8584"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Album</a
+            >
+          </li>
+          <li class="nav__list--item font-secondary">
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 15.8333C12.7583 15.8333 15 13.5917 15 10.8333V6.66666C15 3.90833 12.7583 1.66666 10 1.66666C7.24167 1.66666 5 3.90833 5 6.66666V10.8333C5 13.5917 7.24167 15.8333 10 15.8333Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2.5 9.16666V10.8333C2.5 14.975 5.85833 18.3333 10 18.3333C14.1417 18.3333 17.5 14.975 17.5 10.8333V9.16666"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.59155 6.23333C9.07489 5.69166 10.6916 5.69166 12.1749 6.23333"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.3584 8.73333C9.3584 8.45833 10.4167 8.45833 11.4167 8.73333"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Podcast</a
+            >
+          </li>
+          <li class="nav__list--item font-secondary">
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M18.3334 3.89167V13.95C18.3334 14.75 17.6834 15.5 16.8834 15.6L16.6084 15.6334C14.7917 15.875 11.9917 16.8 10.3917 17.6833C10.1751 17.8083 9.81676 17.8083 9.59176 17.6833L9.55839 17.6667C7.95839 16.7917 5.16677 15.875 3.35844 15.6334L3.11674 15.6C2.31674 15.5 1.66675 14.75 1.66675 13.95V3.88333C1.66675 2.89167 2.47506 2.14167 3.46673 2.22501C5.21673 2.36667 7.86672 3.25003 9.35006 4.17503L9.55839 4.3C9.80006 4.45 10.2001 4.45 10.4418 4.3L10.5834 4.20834C11.1084 3.88334 11.7751 3.55834 12.5001 3.26667V6.66669L14.1667 5.55834L15.8334 6.66669V2.31671C16.0584 2.27505 16.2751 2.25002 16.4751 2.23335H16.5251C17.5168 2.15002 18.3334 2.89167 18.3334 3.89167Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 4.57499V17.075"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.8333 2.31669V6.66666L14.1667 5.55832L12.5 6.66666V3.26665C13.5917 2.83332 14.8083 2.48336 15.8333 2.31669Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Audio Book</a
+            >
+          </li>
+        </ul>
+        <!-- Navigation List 2-->
+        <ul class="nav__list">
+          <h2 class="nav__list--title font-primary">Library</h2>
+          <li class="nav__list--item font-secondary">
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M18.3334 10C18.3334 14.6 14.6001 18.3333 10.0001 18.3333C5.40008 18.3333 1.66675 14.6 1.66675 10C1.66675 5.40001 5.40008 1.66667 10.0001 1.66667C14.6001 1.66667 18.3334 5.40001 18.3334 10Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13.0917 12.65L10.5083 11.1083C10.0583 10.8417 9.69165 10.2 9.69165 9.675V6.25833"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Recent</a
+            >
+          </li>
+          <li class="nav__list--item font-secondary">
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10.5167 17.3417C10.2334 17.4417 9.76675 17.4417 9.48342 17.3417C7.06675 16.5167 1.66675 13.075 1.66675 7.24168C1.66675 4.66668 3.74175 2.58334 6.30008 2.58334C7.81675 2.58334 9.15842 3.31668 10.0001 4.45001C10.8417 3.31668 12.1917 2.58334 13.7001 2.58334C16.2584 2.58334 18.3334 4.66668 18.3334 7.24168C18.3334 13.075 12.9334 16.5167 10.5167 17.3417Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Favourite</a
+            >
+          </li>
+          <li class="nav__list--item font-secondary">
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M5.2333 18.3333C6.66924 18.3333 7.8333 17.1693 7.8333 15.7333C7.8333 14.2974 6.66924 13.1333 5.2333 13.1333C3.79736 13.1333 2.6333 14.2974 2.6333 15.7333C2.6333 17.1693 3.79736 18.3333 5.2333 18.3333Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17.3666 14V3.83332C17.3666 1.66665 16.0083 1.36665 14.6333 1.74165L9.43325 3.15832C8.48325 3.41665 7.83325 4.16665 7.83325 5.24999V7.05832V8.27499V15.725"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.7667 16.6C16.2027 16.6 17.3667 15.4359 17.3667 14C17.3667 12.5641 16.2027 11.4 14.7667 11.4C13.3308 11.4 12.1667 12.5641 12.1667 14C12.1667 15.4359 13.3308 16.6 14.7667 16.6Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.83325 7.93334L17.3666 5.33334"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Playlist</a
+            >
+          </li>
+        </ul>
+        <!-- Navigation List 1 -->
+        <ul class="nav__list">
+          <h2 class="nav__list--title font-primary">More</h2>
+          <li class="nav__list--item font-secondary">
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1.66675 10.7333V9.26666C1.66675 8.4 2.37508 7.68333 3.25008 7.68333C4.75841 7.68333 5.37508 6.61666 4.61675 5.30833C4.18341 4.55833 4.44175 3.58333 5.20008 3.15L6.64175 2.325C7.30008 1.93333 8.15008 2.16666 8.54175 2.825L8.63341 2.98333C9.38341 4.29166 10.6167 4.29166 11.3751 2.98333L11.4667 2.825C11.8584 2.16666 12.7084 1.93333 13.3667 2.325L14.8084 3.15C15.5667 3.58333 15.8251 4.55833 15.3917 5.30833C14.6334 6.61666 15.2501 7.68333 16.7584 7.68333C17.6251 7.68333 18.3417 8.39166 18.3417 9.26666V10.7333C18.3417 11.6 17.6334 12.3167 16.7584 12.3167C15.2501 12.3167 14.6334 13.3833 15.3917 14.6917C15.8251 15.45 15.5667 16.4167 14.8084 16.85L13.3667 17.675C12.7084 18.0667 11.8584 17.8333 11.4667 17.175L11.3751 17.0167C10.6251 15.7083 9.39175 15.7083 8.63341 17.0167L8.54175 17.175C8.15008 17.8333 7.30008 18.0667 6.64175 17.675L5.20008 16.85C4.44175 16.4167 4.18341 15.4417 4.61675 14.6917C5.37508 13.3833 4.75841 12.3167 3.25008 12.3167C2.37508 12.3167 1.66675 11.6 1.66675 10.7333Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Setting</a
+            >
+          </li>
+          <li class="nav__list--item font-secondary">
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10.1334 9.05835C10.05 9.05002 9.95005 9.05002 9.85838 9.05835C7.87505 8.99169 6.30005 7.36669 6.30005 5.36669C6.30005 3.32502 7.95005 1.66669 10 1.66669C12.0417 1.66669 13.7 3.32502 13.7 5.36669C13.6917 7.36669 12.1167 8.99169 10.1334 9.05835Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5.9666 12.1333C3.94993 13.4833 3.94993 15.6833 5.9666 17.025C8.25827 18.5583 12.0166 18.5583 14.3083 17.025C16.3249 15.675 16.3249 13.475 14.3083 12.1333C12.0249 10.6083 8.2666 10.6083 5.9666 12.1333Z"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Account</a
+            >
+          </li>
+          <li class="nav__list--item font-secondary">
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.8999 7.55999C9.2099 3.95999 11.0599 2.48999 15.1099 2.48999H15.2399C19.7099 2.48999 21.4999 4.27999 21.4999 8.74999V15.27C21.4999 19.74 19.7099 21.53 15.2399 21.53H15.1099C11.0899 21.53 9.2399 20.08 8.9099 16.54"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.0001 12H3.62012"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5.85 8.65002L2.5 12L5.85 15.35"
+                  stroke="#999999"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+              >Logout</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <!-- Main content -->
+    <main></main>
+  </body>
+</html>
