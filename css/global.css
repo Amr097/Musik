@@ -95,6 +95,9 @@
   height: 2rem;
 }
 
+.recommended {
+  margin-top: 2.4rem;
+}
 .recommended__container {
   margin-top: 2.4rem;
 }
@@ -151,9 +154,10 @@
 
 .chart {
   font-size: 1rem;
+  margin-top: 2.4rem;
 }
 .chart__container {
-  margin-top: 2.4em;
+  margin-top: 2.4rem;
   display: flex;
   justify-content: space-between;
 }
@@ -188,6 +192,7 @@
   border-radius: 1.2em;
   background-color: rgba(124, 116, 238, 0.1);
   transition: height 0.3s ease-in-out, width 0.35s ease-in-out 0.35s;
+  z-index: -1;
 }
 .chart__item--item:hover::before {
   height: 100%;
@@ -219,12 +224,18 @@
   font-size: 1.6em;
   font-weight: 500;
 }
+.chart__item--artist:hover {
+  filter: brightness(127%) !important;
+}
 .chart__item--song {
   grid-column: 2/span 1;
   color: #6b6b6b;
   font-family: Montserrat;
   font-size: 1.4em;
   font-weight: 500;
+}
+.chart__item--song:hover {
+  filter: brightness(127%) !important;
 }
 .chart__item--icon {
   position: absolute;
@@ -259,6 +270,43 @@
   inset: 0;
   margin: 0 auto;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 16.25%, rgba(0, 0, 0, 0.31) 43.48%, rgba(0, 0, 0, 0.61) 60.81%, rgba(0, 0, 0, 0.88) 77.05%, #000 90.75%);
+}
+
+.album {
+  font-size: 1rem;
+  margin-top: 2.4rem;
+}
+.album__container {
+  margin-top: 2.4rem;
+}
+.album__list {
+  display: flex;
+  gap: 3em;
+}
+.album__item {
+  flex: 1;
+}
+.album__figure {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2em;
+}
+.album__image {
+  width: 100%;
+  height: 17em;
+  background-size: cover;
+  border-radius: 100px;
+}
+.album__caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3em;
+}
+.album__caption a {
+  display: inline-block;
+  width: max-content;
 }
 
 .sidebar {
@@ -332,7 +380,7 @@
   transition: all 0.2s ease-in-out;
 }
 .sidebar .nav .nav__list--title {
-  margin: 1rem 0;
+  margin: 1rem 0 1.7rem;
 }
 .sidebar .nav .nav__list--item {
   padding: 2rem 2.4rem;
@@ -383,7 +431,7 @@ main {
   grid-column: 2/-1;
   grid-row: 2/-1;
   width: 100%;
-  padding: 0 3.2rem;
+  padding: 0 3.2rem 3.2rem;
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
@@ -405,9 +453,15 @@ main {
 .font-secondary {
   font-size: 1.45rem;
 }
+.font-secondary:hover {
+  filter: brightness(127%) !important;
+}
 
 .font-tertiary {
   font-size: 1.2rem;
+}
+.font-tertiary:hover {
+  filter: brightness(127%) !important;
 }
 
 .f-grey {
@@ -476,6 +530,9 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+}
+a:hover {
+  filter: brightness(104%);
 }
 
 p,

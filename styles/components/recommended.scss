@@ -1,6 +1,7 @@
 .recommended {
+  margin-top: $margin-top;
   &__container {
-    margin-top: 2.4rem;
+    margin-top: $margin-top;
   }
   &__list {
     display: flex;
