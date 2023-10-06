@@ -1,0 +1,60 @@
+.recommended {
+  &__container {
+    margin-top: 2.4rem;
+  }
+  &__list {
+    display: flex;
+    gap: 1.4rem;
+    width: 100%;
+  }
+  &__item {
+    padding: 1rem;
+    position: relative;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+  }
+  &__figure {
+    .recommended__link {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+  &__image {
+    width: 17.5rem;
+    height: 17.5rem;
+    border-radius: 1.2rem;
+    object-fit: cover;
+  }
+  &__icon {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0.7rem;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 7.7rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-1px);
+    }
+
+    svg {
+      object-fit: contain;
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
+  &__caption {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}

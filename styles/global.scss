@@ -3,6 +3,8 @@
 
 @import "components/btns";
 @import "components/search";
+@import "components/recommended";
+@import "components/chart";
 
 @import "layouts/sidebar";
 @import "layouts/header";
@@ -57,11 +59,13 @@ body {
   grid-template-columns: 25% 75%;
   grid-template-rows: max-content 1fr;
   background-color: $bg-color-1;
+  cursor: url(../assets/images/cursor.svg), auto;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 p,
@@ -77,7 +81,7 @@ h6 {
 img,
 video,
 canvas {
-  //max-width: 100%;
+  max-width: 100%;
 }
 
 svg {
@@ -92,8 +96,4 @@ button {
   border: none;
   outline: none;
   background-color: inherit;
-}
-
-a {
-  cursor: pointer;
 }
