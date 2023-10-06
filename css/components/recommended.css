@@ -1,55 +1,17 @@
-.recommended__container {
-  margin-top: 2.4rem;
-}
-.recommended__list {
-  display: flex;
-  gap: 1.4rem;
-  width: 100%;
-}
-.recommended__item {
-  padding: 1rem;
-  position: relative;
-  transition: 0.2s ease-in-out;
-}
-.recommended__item:hover {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-.recommended__figure .recommended__link {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.recommended__image {
-  width: 17.5rem;
-  height: 17.5rem;
-  border-radius: 1.2rem;
-  object-fit: cover;
-}
-.recommended__icon {
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 0.7rem;
-  position: absolute;
-  right: 1.5rem;
-  bottom: 7.7rem;
-  border-radius: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-.recommended__icon:hover {
-  transform: translateY(-1px);
-}
-.recommended__icon svg {
-  object-fit: contain;
-  width: 1.6rem;
-  height: 1.6rem;
-}
-.recommended__caption {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 2 |   margin-top: $margin-top;
+ *   |               ^^^^^^^^^^^
+ *   '
+ *   styles\components\recommended.scss 2:15  root stylesheet */
 
-/*# sourceMappingURL=recommended.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 2 \2502    margin-top: $margin-top;\d\a   \2502                ^^^^^^^^^^^\a   \2575 \a   styles\\components\\recommended.scss 2:15  root stylesheet";
+}

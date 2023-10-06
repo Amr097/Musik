@@ -5,6 +5,7 @@
 @import "components/search";
 @import "components/recommended";
 @import "components/chart";
+@import "components/album";
 
 @import "layouts/sidebar";
 @import "layouts/header";
@@ -66,6 +67,9 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  &:hover {
+    filter: brightness(104%);
+  }
 }
 
 p,

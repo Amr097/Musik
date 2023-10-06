@@ -1,0 +1,42 @@
+.album {
+  font-size: 1rem;
+  margin-top: $margin-top;
+
+  &__container {
+    margin-top: $margin-top;
+  }
+
+  &__list {
+    display: flex;
+    gap: 3em;
+  }
+
+  &__item {
+    flex: 1;
+  }
+
+  &__figure {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2em;
+  }
+
+  &__image {
+    width: 100%;
+    height: 17em;
+    background-size: cover;
+    border-radius: 100px;
+  }
+
+  &__caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
+    a {
+      display: inline-block;
+      width: max-content;
+    }
+  }
+}

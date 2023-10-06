@@ -1,7 +1,8 @@
 .chart {
   font-size: 1rem;
+  margin-top: $margin-top;
   &__container {
-    margin-top: 2.4em;
+    margin-top: $margin-top;
     display: flex;
     justify-content: space-between;
   }
@@ -36,6 +37,7 @@
         border-radius: 1.2em;
         background-color: rgba(124, 116, 238, 0.1);
         transition: height 0.3s ease-in-out, width 0.35s ease-in-out 0.35s;
+        z-index: -1;
       }
       &:hover::before {
         height: 100%;
@@ -69,6 +71,9 @@
       color: #121212;
       font-size: 1.6em;
       font-weight: 500;
+      &:hover {
+        filter: brightness(127%) !important;
+      }
     }
     &--song {
       grid-column: 2 / span 1;
@@ -76,6 +81,9 @@
       font-family: Montserrat;
       font-size: 1.4em;
       font-weight: 500;
+      &:hover {
+        filter: brightness(127%) !important;
+      }
     }
     &--icon {
       position: absolute;

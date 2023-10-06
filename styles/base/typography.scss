@@ -13,10 +13,16 @@
 
 .font-secondary {
   font-size: 1.45rem;
+  &:hover {
+    filter: brightness(127%) !important;
+  }
 }
 
 .font-tertiary {
   font-size: 1.2rem;
+  &:hover {
+    filter: brightness(127%) !important;
+  }
 }
 
 .f-grey {
