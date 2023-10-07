@@ -1,0 +1,144 @@
+.player {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 1em 2em;
+  background: $bg-gray;
+  backdrop-filter: blur(47.5px);
+
+  &__song {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(2, max-content);
+    grid-row-gap: 0.25em;
+    grid-column-gap: 2em;
+
+    &--name {
+      height: fit-content;
+      align-self: flex-end;
+      font-size: 1.35em;
+      cursor: pointer;
+    }
+
+    &--artist {
+      height: fit-content;
+      font-size: 1.25em;
+      cursor: pointer;
+    }
+  }
+
+  &__image {
+    width: 6.5em;
+    height: 6.5em;
+    border-radius: 100px;
+    grid-column: 1 / span 1;
+    grid-row: 1 / -1;
+    cursor: pointer;
+  }
+
+  &__control {
+    &--btns-group {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+    }
+    &--btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: 0.15s ease-in-out;
+
+      &:hover {
+        background-color: $gray;
+        border-radius: 100px;
+        padding: 0.1em 0.2em;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      }
+
+      &.play-btn {
+        background-color: $purple-1;
+        padding: 0.3em;
+        border-radius: 100px;
+
+        &:hover {
+          background-color: lighten($color: $purple-1, $amount: 4%);
+        }
+      }
+    }
+    &--progress {
+      min-width: 38.9em;
+      min-height: 0.4em;
+      display: flex;
+      align-items: center;
+      gap: 1.2em;
+    }
+
+    &--bar {
+      width: 38.9em;
+      flex-shrink: 0;
+      height: 0.4em;
+      border-radius: 100px;
+      background-color: $gray;
+      position: relative;
+      margin: 1em;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: $purple-1;
+        width: var(--music-bar-width);
+        z-index: 1;
+        border-radius: 100px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__options {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+
+    &--btn {
+      cursor: pointer;
+      transition: 0.15s ease-in-out;
+
+      svg {
+        stroke: black;
+      }
+
+      &:hover {
+        svg {
+          stroke: $purple-2;
+        }
+      }
+    }
+
+    &--bar {
+      cursor: pointer;
+      width: 10em;
+      height: 0.4em;
+      flex-shrink: 0;
+      background-color: $gray;
+      position: relative;
+      border-radius: 100px;
+    }
+    &--progress {
+      cursor: pointer;
+      position: absolute;
+      inset: 0;
+      background-color: $purple-1;
+      width: 35%;
+      z-index: 1;
+      border-radius: 100px;
+    }
+  }
+}
