@@ -1,5 +1,7 @@
 .recommended {
   margin-top: $margin-top;
+  container-name: recommended;
+  container-type: inline-size;
   &__container {
     margin-top: $margin-top;
   }
@@ -57,5 +59,31 @@
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
+  }
+}
+
+@container recommended  (width<= 823px) {
+  .recommended {
+    ::-webkit-scrollbar {
+      width: 0.1px;
+      height: 3px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: rgb(255, 255, 255);
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: $gradient-secondary-2;
+      border-radius: 10px;
+    }
+  }
+
+  .recommended__container {
+    overflow-x: scroll;
+  }
+  .recommended__list {
+    width: max-content;
   }
 }

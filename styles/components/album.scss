@@ -1,6 +1,8 @@
 .album {
   font-size: 1rem;
   margin-top: $margin-top;
+  container-name: album;
+  container-type: inline-size;
 
   &__container {
     margin-top: $margin-top;
@@ -38,5 +40,36 @@
       display: inline-block;
       width: max-content;
     }
+  }
+}
+
+@container album  (width< 892px) {
+  .album {
+    ::-webkit-scrollbar {
+      width: 0.1px;
+      height: 3px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: rgb(255, 255, 255);
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: $gradient-secondary-2;
+      border-radius: 10px;
+    }
+  }
+
+  .album__container {
+    overflow-x: scroll;
+  }
+  .album__list {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .album__image {
+    min-width: 14em;
   }
 }
