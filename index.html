@@ -15,9 +15,13 @@
   </head>
   <body>
     <!-- Header -->
+    <input type="checkbox" class="header__checkbox" id="nav-toggle" />
+    <label for="nav-toggle" class="header__btn">
+      <span class="header__icon">&nbsp;</span>
+    </label>
     <header class="header">
       <form class="search">
-        <button class="search__button">
+        <button aria-label="Search" class="search__button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -45,11 +49,13 @@
           class="search__input"
           type="text"
           placeholder="Search artist, title, album"
+          id="search"
         />
       </form>
       <button class="listen-btn">Listen Now !</button>
     </header>
     <!-- Sidebar -->
+
     <aside class="sidebar">
       <div class="logo">
         <ul class="logo__strokes--front">
@@ -74,7 +80,7 @@
       <nav class="nav">
         <!-- Navigation List 1 -->
         <ul class="nav__list">
-          <h2 class="nav__list--title font-primary">Discover</h2>
+          <li><h2 class="nav__list--title font-primary">Discover</h2></li>
           <li class="nav__list--item">
             <a class="font-secondary f-grey-2 f-weight-500" href="">
               <svg
@@ -271,7 +277,8 @@
         </ul>
         <!-- Navigation List 2-->
         <ul class="nav__list">
-          <h2 class="nav__list--title font-primary">Library</h2>
+          <li><h2 class="nav__list--title font-primary">Library</h2></li>
+
           <li class="nav__list--item">
             <a href="" class="font-secondary f-grey-2 f-weight-500">
               <svg
@@ -357,7 +364,7 @@
         </ul>
         <!-- Navigation List 1 -->
         <ul class="nav__list">
-          <h2 class="nav__list--title font-primary">More</h2>
+          <li><h2 class="nav__list--title font-primary">More</h2></li>
           <li class="nav__list--item">
             <a href="" class="font-secondary f-grey-2 f-weight-500">
               <svg
@@ -463,7 +470,7 @@
                     alt="Recommended song image"
                     class="recommended__image"
                   />
-                  <button class="recommended__icon">
+                  <button aria-label="Play" class="recommended__icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -501,7 +508,7 @@
                     alt="Recommended song image"
                     class="recommended__image"
                   />
-                  <button class="recommended__icon">
+                  <button aria-label="Play" class="recommended__icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -540,7 +547,7 @@
                     alt="Recommended song image"
                     class="recommended__image"
                   />
-                  <button class="recommended__icon">
+                  <button aria-label="Play" class="recommended__icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -575,7 +582,7 @@
                     alt="Recommended song image"
                     class="recommended__image"
                   />
-                  <button class="recommended__icon">
+                  <button aria-label="Play" class="recommended__icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -612,7 +619,7 @@
                     alt="Recommended song image"
                     class="recommended__image"
                   />
-                  <button class="recommended__icon">
+                  <button aria-label="Play" class="recommended__icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -647,7 +654,7 @@
                     alt="Recommended song image"
                     class="recommended__image"
                   />
-                  <button class="recommended__icon">
+                  <button aria-label="Play" class="recommended__icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -693,18 +700,22 @@
                 <a href="" class="chart__link">
                   <img
                     src="./assets/images/chart-1.webp"
-                    alt="Top 100 Hits"
+                    alt="New Release"
                     class="chart__image"
                   />
                   <div class="chart__filter"></div>
-                  <figcation class="chart__caption">100 TOP Hits</figcation></a
+                  <figcation class="chart__caption">NEW RELEASE</figcation></a
                 >
               </figure>
               <ul class="chart__item--list">
                 <li class="chart__item--item">
                   <button class="chart__item--btn">
                     <p class="chart__item--num">1</p>
-                    <a href="" class="chart__item--icon">
+                    <a
+                      href=""
+                      aria-label=" Link to Play page"
+                      class="chart__item--icon"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -730,7 +741,11 @@
                 <li class="chart__item--item">
                   <button class="chart__item--btn">
                     <p class="chart__item--num">2</p>
-                    <a href="" class="chart__item--icon">
+                    <a
+                      href=""
+                      aria-label="Link to Play page"
+                      class="chart__item--icon"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -756,7 +771,11 @@
                 <li class="chart__item--item">
                   <button class="chart__item--btn">
                     <p class="chart__item--num">3</p>
-                    <a href="" class="chart__item--icon">
+                    <a
+                      href=""
+                      aria-label="Link to Play page"
+                      class="chart__item--icon"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -782,7 +801,11 @@
                 <li class="chart__item--item">
                   <button class="chart__item--btn">
                     <p class="chart__item--num">4</p>
-                    <a href="" class="chart__item--icon">
+                    <a
+                      href=""
+                      aria-label="Link to Play page"
+                      class="chart__item--icon"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -824,7 +847,11 @@
                 <li class="chart__item--item">
                   <button class="chart__item--btn">
                     <p class="chart__item--num">1</p>
-                    <a href="" class="chart__item--icon">
+                    <a
+                      href=""
+                      aria-label="Link to Play page"
+                      class="chart__item--icon"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -852,7 +879,11 @@
                 <li class="chart__item--item">
                   <button class="chart__item--btn">
                     <p class="chart__item--num">2</p>
-                    <a href="" class="chart__item--icon">
+                    <a
+                      href=""
+                      aria-label="Link to Play page"
+                      class="chart__item--icon"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -878,7 +909,11 @@
                 <li class="chart__item--item">
                   <button class="chart__item--btn">
                     <p class="chart__item--num">3</p>
-                    <a href="" class="chart__item--icon">
+                    <a
+                      href=""
+                      aria-label="Link to Play page"
+                      class="chart__item--icon"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -904,7 +939,11 @@
                 <li class="chart__item--item">
                   <button class="chart__item--btn">
                     <p class="chart__item--num">4</p>
-                    <a href="" class="chart__item--icon">
+                    <a
+                      href=""
+                      aria-label="Link to Play page"
+                      class="chart__item--icon"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -930,7 +969,7 @@
               </ul>
             </li>
           </ul>
-          <button aria-label="Next Page" class="next-btn">
+          <button aria-label="Next" class="next-btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -1075,7 +1114,7 @@
         <div class="player__control">
           <!-- Player Control Buttons-->
           <div class="player__control--btns-group">
-            <button class="player__control--btn">
+            <button aria-label="Shuffle" class="player__control--btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -1096,7 +1135,7 @@
                   fill="#121212"
                 />
               </svg></button
-            ><button class="player__control--btn">
+            ><button aria-label="Previous" class="player__control--btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -1113,7 +1152,10 @@
                   fill="#121212"
                 />
               </svg></button
-            ><button class="player__control--btn play-btn">
+            ><button
+              aria-label="Pause/Play"
+              class="player__control--btn play-btn"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="21"
@@ -1130,7 +1172,7 @@
                   fill="white"
                 />
               </svg></button
-            ><button class="player__control--btn">
+            ><button aria-label="Next" class="player__control--btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -1147,7 +1189,7 @@
                   fill="#121212"
                 />
               </svg></button
-            ><button class="player__control--btn">
+            ><button aria-label="Repeat" class="player__control--btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -1157,18 +1199,21 @@
               >
                 <path
                   d="M14.5 3L16.94 5.34003L8.98999 5.32001C5.41999 5.32001 2.48999 8.25003 2.48999 11.84C2.48999 13.63 3.21999 15.26 4.39999 16.44"
+                  stroke="#121212"
                   stroke-width="1.5"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 />
                 <path
                   d="M10.5001 21L8.06006 18.66L16.0101 18.68C19.5801 18.68 22.5101 15.75 22.5101 12.16C22.5101 10.37 21.7801 8.74 20.6001 7.56"
+                  stroke="#121212"
                   stroke-width="1.5"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 />
                 <path
                   d="M12.75 14.67V9.33002L11.25 11"
+                  stroke="#121212"
                   stroke-width="1.5"
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -1178,21 +1223,22 @@
           </div>
           <!-- Player Control Progress-->
           <div class="player__control--progress">
-            <span aria-label="Song timer start" class="f-small f-weight-500"
-              >1:29</span
-            >
+            <span role="timer" ="f-small f-weight-500">1:29</span>
             <div
-              aria-label="Song progess bar"
+              role="slider"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="48"
+              aria-valuetext="Volume value"
               class="player__control--bar"
+              aria-label="Volume Slider"
             ></div>
-            <span aria-label="Song timer end" class="f-small f-weight-500"
-              >4:24</span
-            >
+            <span role="timer" class="f-small f-weight-500">4:24</span>
           </div>
         </div>
         <!-- Player Options-->
         <div class="player__options">
-          <button class="player__options--btn">
+          <button aria-label="Favourite" class="player__options--btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -1208,7 +1254,7 @@
               />
             </svg>
           </button>
-          <button class="player__options--btn">
+          <button aria-label="Volume" class="player__options--btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -1235,13 +1281,18 @@
             </svg>
           </button>
 
-          <span class="player__options--bar" aria-label="Volume bar">
+          <span class="player__options--bar">
             <span
               class="player__options--progress"
-              aria-label="Volume bar"
+              role="slider"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="48"
+              aria-valuetext="Volume value"
+              aria-label="Volume Slider"
             ></span>
           </span>
-          <button class="player__options--btn">
+          <button aria-label="Task list" class="player__options--btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

@@ -1,6 +1,15 @@
 .chart {
   font-size: 1rem;
   margin-top: $margin-top;
+
+  @media screen and (width<=52.3125em) {
+    font-size: 0.9rem;
+  }
+
+  @media screen and (width<=47.3125em) {
+    font-size: 0.8rem;
+  }
+
   &__container {
     margin-top: $margin-top;
     display: flex;
@@ -13,6 +22,16 @@
     display: flex;
     justify-content: flex-end;
     gap: 2rem;
+
+    @media screen and (width<=43.125em) {
+      font-size: 1rem;
+      flex-direction: column;
+    }
+
+    @media screen and (width<=43.125em) {
+      align-items: center;
+      justify-content: flex-start;
+    }
 
     &--list {
       display: flex;
@@ -27,6 +46,10 @@
       padding: 1.2em;
       border-radius: 1.2em;
       position: relative;
+
+      @media screen and (width<=43.125em) {
+        padding: 1.2em 0;
+      }
 
       &::before {
         content: "";
@@ -64,6 +87,10 @@
       font-size: 2em;
       font-weight: 500;
       transition: scale 0.2s ease-in-out;
+
+      @media screen and (width<=43.125em) {
+        font-size: 1.4em;
+      }
     }
 
     &--artist {
@@ -94,13 +121,31 @@
   }
   &__figure {
     position: relative;
+    @media screen and (width<=43.125em) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 23em;
+      height: 22.5em;
+    }
   }
   &__image {
     width: 17em;
     height: 100%;
     border-radius: 1.2em;
     object-fit: cover;
+
+    @media screen and (width<=43.125em) {
+      width: 100%;
+    }
   }
+
+  &__link {
+    @media screen and (width<=43.125em) {
+      max-width: 23em;
+    }
+  }
+
   &__caption {
     position: absolute;
     bottom: 0.75em;
@@ -120,5 +165,9 @@
     inset: 0;
     margin: 0 auto;
     background: $gradient-tertiary;
+
+    @media screen and (width<=43.125em) {
+      width: 100%;
+    }
   }
 }
