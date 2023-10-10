@@ -1,93 +1,9 @@
 main {
   grid-column: 2/-1;
   grid-row: 2/-1;
-  padding: 3.2rem;
   width: 100%;
-
-  ::-webkit-scrollbar {
-    width: 1rem;
-    height: 0.9rem;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: rgb(255, 255, 255);
-    border-radius: 10px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    display: block;
-    border-radius: 10px;
-    background: $gradient-secondary-opacity;
-    width: 8px;
-    height: 8px;
-    background-clip: content-box;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: $gradient-secondary-2;
-    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
-  }
-
-  .recommended {
-    &__container {
-      margin-top: 2.4rem;
-    }
-    &__list {
-      display: flex;
-      gap: 3rem;
-      width: 100%;
-      overflow-x: scroll;
-      padding-bottom: 2rem;
-    }
-    &__item {
-      padding: 1rem;
-      position: relative;
-
-      transition: 0.2s ease-in-out;
-      &:hover {
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-      }
-    }
-    &__figure {
-      .recommended__link {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-      }
-    }
-    &__image {
-      width: 17.5rem;
-      height: 17.5rem;
-      border-radius: 1.2rem;
-      object-fit: cover;
-    }
-    &__icon {
-      background-color: rgba(0, 0, 0, 0.4);
-      padding: 0.7rem;
-      position: absolute;
-      right: 2rem;
-      bottom: 8rem;
-      border-radius: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      transition: 0.2s ease-in-out;
-
-      &:hover {
-        transform: translateY(-1px);
-      }
-
-      svg {
-        object-fit: contain;
-        width: 1.6rem;
-        height: 1.6rem;
-      }
-    }
-    &__caption {
-      display: flex;
-      flex-direction: column;
-      gap: 0.3rem;
-    }
-  }
+  padding: 0 3.2rem 11rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }

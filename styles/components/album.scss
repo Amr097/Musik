@@ -1,0 +1,75 @@
+.album {
+  font-size: 1rem;
+  margin-top: $margin-top;
+  container-name: album;
+  container-type: inline-size;
+
+  &__container {
+    margin-top: $margin-top;
+  }
+
+  &__list {
+    display: flex;
+    gap: 3em;
+  }
+
+  &__item {
+    flex: 1;
+  }
+
+  &__figure {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2em;
+  }
+
+  &__image {
+    width: 100%;
+    height: 15em;
+    background-size: cover;
+    border-radius: 100px;
+  }
+
+  &__caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
+    a {
+      display: inline-block;
+      width: max-content;
+    }
+  }
+}
+
+@container album  (width< 892px) {
+  .album {
+    ::-webkit-scrollbar {
+      width: 0.1px;
+      height: 3px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: rgb(255, 255, 255);
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: $gradient-secondary-2;
+      border-radius: 10px;
+    }
+  }
+
+  .album__container {
+    overflow-x: scroll;
+  }
+  .album__list {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .album__image {
+    min-width: 14em;
+  }
+}

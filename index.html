@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Immerse yourself in a world of rhythms, lyrics, and harmonies. Explore diverse genres, artists, and timeless classics. "
+    />
     <title>Musik</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,9 +19,13 @@
   </head>
   <body>
     <!-- Header -->
+    <input type="checkbox" class="header__checkbox" id="nav-toggle" />
+    <label for="nav-toggle" class="header__btn">
+      <span class="header__icon">&nbsp;</span>
+    </label>
     <header class="header">
       <form class="search">
-        <button class="search__button">
+        <button aria-label="Search" class="search__button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -45,11 +53,13 @@
           class="search__input"
           type="text"
           placeholder="Search artist, title, album"
+          id="search"
         />
       </form>
       <button class="listen-btn">Listen Now !</button>
     </header>
     <!-- Sidebar -->
+
     <aside class="sidebar">
       <div class="logo">
         <ul class="logo__strokes--front">
@@ -74,9 +84,9 @@
       <nav class="nav">
         <!-- Navigation List 1 -->
         <ul class="nav__list">
-          <h2 class="nav__list--title font-primary">Discover</h2>
-          <li class="nav__list--item font-secondary">
-            <a href="">
+          <li><h2 class="nav__list--title font-primary">Discover</h2></li>
+          <li class="nav__list--item">
+            <a class="font-secondary f-grey-2 f-weight-500" href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -94,8 +104,8 @@
               Home</a
             >
           </li>
-          <li class="nav__list--item font-secondary">
-            <a href=""
+          <li class="nav__list--item">
+            <a class="font-secondary f-grey-2 f-weight-500" href="#"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -134,8 +144,8 @@
               Artist</a
             >
           </li>
-          <li class="nav__list--item font-secondary">
-            <a href=""
+          <li class="nav__list--item">
+            <a class="font-secondary f-grey-2 f-weight-500" href="#"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -197,8 +207,8 @@
               >Album</a
             >
           </li>
-          <li class="nav__list--item font-secondary">
-            <a href=""
+          <li class="nav__list--item">
+            <a class="font-secondary f-grey-2 f-weight-500" href="#"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -236,8 +246,8 @@
               >Podcast</a
             >
           </li>
-          <li class="nav__list--item font-secondary">
-            <a href="">
+          <li class="nav__list--item">
+            <a href="#" class="font-secondary f-grey-2 f-weight-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -271,9 +281,10 @@
         </ul>
         <!-- Navigation List 2-->
         <ul class="nav__list">
-          <h2 class="nav__list--title font-primary">Library</h2>
-          <li class="nav__list--item font-secondary">
-            <a href="">
+          <li><h2 class="nav__list--title font-primary">Library</h2></li>
+
+          <li class="nav__list--item">
+            <a href="#" class="font-secondary f-grey-2 f-weight-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -297,8 +308,8 @@
               >Recent</a
             >
           </li>
-          <li class="nav__list--item font-secondary">
-            <a href=""
+          <li class="nav__list--item">
+            <a href="#" class="font-secondary f-grey-2 f-weight-500"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -315,8 +326,8 @@
               >Favourite</a
             >
           </li>
-          <li class="nav__list--item font-secondary">
-            <a href="">
+          <li class="nav__list--item">
+            <a href="#" class="font-secondary f-grey-2 f-weight-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -357,9 +368,9 @@
         </ul>
         <!-- Navigation List 1 -->
         <ul class="nav__list">
-          <h2 class="nav__list--title font-primary">More</h2>
-          <li class="nav__list--item font-secondary">
-            <a href="">
+          <li><h2 class="nav__list--title font-primary">More</h2></li>
+          <li class="nav__list--item">
+            <a href="#" class="font-secondary f-grey-2 f-weight-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -385,8 +396,8 @@
               >Setting</a
             >
           </li>
-          <li class="nav__list--item font-secondary">
-            <a href="">
+          <li class="nav__list--item">
+            <a href="#" class="font-secondary f-grey-2 f-weight-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -410,8 +421,8 @@
               >Account</a
             >
           </li>
-          <li class="nav__list--item font-secondary">
-            <a href="">
+          <li class="nav__list--item">
+            <a href="#" class="font-secondary f-grey-2 f-weight-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -450,20 +461,20 @@
       <section class="recommended">
         <div class="flex-between">
           <h1 class="font-primary f-weight-500">Recommended</h1>
-          <a href="" class="btn-purple">View all</a>
+          <a href="#" class="btn-purple">View all</a>
         </div>
         <!-- Recommended Section -->
         <div class="recommended__container">
           <ul class="recommended__list">
             <li class="recommended__item">
               <figure class="recommended__figure">
-                <a href="" class="recommended__link">
+                <a href="#" class="recommended__link">
                   <img
                     src="./assets/images/discover-1.webp"
                     alt="Recommended song image"
                     class="recommended__image"
                   />
-                  <button class="recommended__icon">
+                  <button aria-label="Play" class="recommended__icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -495,13 +506,13 @@
             </li>
             <li class="recommended__item">
               <figure class="recommended__figure">
-                <a href="" class="recommended__link"
+                <a href="#" class="recommended__link"
                   ><img
                     src="./assets/images/discover-2.webp"
                     alt="Recommended song image"
                     class="recommended__image"
                   />
-                  <button class="recommended__icon">
+                  <button aria-label="Play" class="recommended__icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -534,13 +545,13 @@
             </li>
             <li class="recommended__item">
               <figure class="recommended__figure">
-                <a href="" class="recommended__link"
+                <a href="#" class="recommended__link"
                   ><img
                     src="./assets/images/discover-3.webp"
                     alt="Recommended song image"
                     class="recommended__image"
                   />
-                  <button class="recommended__icon">
+                  <button aria-label="Play" class="recommended__icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -569,13 +580,13 @@
             </li>
             <li class="recommended__item">
               <figure class="recommended__figure">
-                <a href="" class="recommended__link"
+                <a href="#" class="recommended__link"
                   ><img
                     src="./assets/images/discover-4.webp"
                     alt="Recommended song image"
                     class="recommended__image"
                   />
-                  <button class="recommended__icon">
+                  <button aria-label="Play" class="recommended__icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -606,13 +617,13 @@
             </li>
             <li class="recommended__item">
               <figure class="recommended__figure">
-                <a href="" class="recommended__link"
+                <a href="#" class="recommended__link"
                   ><img
                     src="./assets/images/discover-5.webp"
                     alt="Recommended song image"
                     class="recommended__image"
                   />
-                  <button class="recommended__icon">
+                  <button aria-label="Play" class="recommended__icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -641,13 +652,13 @@
             </li>
             <li class="recommended__item">
               <figure class="recommended__figure">
-                <a href="" class="recommended__link"
+                <a href="#" class="recommended__link"
                   ><img
                     src="./assets/images/discover-6.webp"
                     alt="Recommended song image"
                     class="recommended__image"
                   />
-                  <button class="recommended__icon">
+                  <button aria-label="Play" class="recommended__icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -683,16 +694,675 @@
       <section class="chart">
         <div class="flex-between">
           <h1 class="font-primary f-weight-500">Top Chart This Week</h1>
-          <a href="" class="btn-purple">View all</a>
+          <a href="#" class="btn-purple">View all</a>
+        </div>
+        <div class="chart__container">
+          <ul class="chart__list">
+            <!-- Top Chart Section Item 1 -->
+            <li class="chart__item">
+              <figure class="chart__figure">
+                <a href="#" class="chart__link">
+                  <img
+                    src="./assets/images/chart-1.webp"
+                    alt="New Release"
+                    class="chart__image"
+                  />
+                  <div class="chart__filter"></div>
+                  <figcation class="chart__caption">NEW RELEASE</figcation></a
+                >
+              </figure>
+              <ul class="chart__item--list">
+                <li class="chart__item--item">
+                  <button class="chart__item--btn">
+                    <p class="chart__item--num">1</p>
+                    <a
+                      href="#"
+                      aria-label=" Link to Play page"
+                      class="chart__item--icon"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        fill="none"
+                      >
+                        <path
+                          d="M4 12.5V8.93999C4 4.51999 7.13 2.70999 10.96 4.91999L14.05 6.69999L17.14 8.47999C20.97 10.69 20.97 14.31 17.14 16.52L14.05 18.3L10.96 20.08C7.13 22.29 4 20.48 4 16.06V12.5Z"
+                          fill="#7C74EE"
+                          stroke="#7C74EE"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></a>
+                  </button>
+
+                  <a class="chart__item--artist" href="#">Sial</a>
+                  <a class="chart__item--song" href="#">Mahalini . 4:03</a>
+                </li>
+                <li class="chart__item--item">
+                  <button class="chart__item--btn">
+                    <p class="chart__item--num">2</p>
+                    <a
+                      href="#"
+                      aria-label="Link to Play page"
+                      class="chart__item--icon"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        fill="none"
+                      >
+                        <path
+                          d="M4 12.5V8.93999C4 4.51999 7.13 2.70999 10.96 4.91999L14.05 6.69999L17.14 8.47999C20.97 10.69 20.97 14.31 17.14 16.52L14.05 18.3L10.96 20.08C7.13 22.29 4 20.48 4 16.06V12.5Z"
+                          fill="#7C74EE"
+                          stroke="#7C74EE"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></a>
+                  </button>
+
+                  <a class="chart__item--artist" href="#"
+                    >Rayuan Perempuan Gila</a
+                  >
+                  <a class="chart__item--song" href="#">Nadin Amizah • 5:20</a>
+                </li>
+                <li class="chart__item--item">
+                  <button class="chart__item--btn">
+                    <p class="chart__item--num">3</p>
+                    <a
+                      href="#"
+                      aria-label="Link to Play page"
+                      class="chart__item--icon"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        fill="none"
+                      >
+                        <path
+                          d="M4 12.5V8.93999C4 4.51999 7.13 2.70999 10.96 4.91999L14.05 6.69999L17.14 8.47999C20.97 10.69 20.97 14.31 17.14 16.52L14.05 18.3L10.96 20.08C7.13 22.29 4 20.48 4 16.06V12.5Z"
+                          fill="#7C74EE"
+                          stroke="#7C74EE"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></a>
+                  </button>
+
+                  <a class="chart__item--artist" href="#">Jiwa yang Bersedih</a>
+                  <a class="chart__item--song" href="#"
+                    >Ghea Indrawati • 4:38</a
+                  >
+                </li>
+                <li class="chart__item--item">
+                  <button class="chart__item--btn">
+                    <p class="chart__item--num">4</p>
+                    <a
+                      href="#"
+                      aria-label="Link to Play page"
+                      class="chart__item--icon"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        fill="none"
+                      >
+                        <path
+                          d="M4 12.5V8.93999C4 4.51999 7.13 2.70999 10.96 4.91999L14.05 6.69999L17.14 8.47999C20.97 10.69 20.97 14.31 17.14 16.52L14.05 18.3L10.96 20.08C7.13 22.29 4 20.48 4 16.06V12.5Z"
+                          fill="#7C74EE"
+                          stroke="#7C74EE"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></a>
+                  </button>
+
+                  <a class="chart__item--artist" href="#">Komang</a>
+                  <a class="chart__item--song" href="#">Raim Laude • 3:42</a>
+                </li>
+              </ul>
+            </li>
+            <!-- Top Chart Section Item 1 -->
+            <li class="chart__item">
+              <figure class="chart__figure">
+                <a href="#" class="chart__link">
+                  <img
+                    src="./assets/images/chart-2.webp"
+                    alt="Top 100 Hits"
+                    class="chart__image"
+                  />
+                  <div class="chart__filter"></div>
+                  <figcation class="chart__caption">100 TOP Hits</figcation></a
+                >
+              </figure>
+              <ul class="chart__item--list">
+                <li class="chart__item--item">
+                  <button class="chart__item--btn">
+                    <p class="chart__item--num">1</p>
+                    <a
+                      href="#"
+                      aria-label="Link to Play page"
+                      class="chart__item--icon"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        fill="none"
+                      >
+                        <path
+                          d="M4 12.5V8.93999C4 4.51999 7.13 2.70999 10.96 4.91999L14.05 6.69999L17.14 8.47999C20.97 10.69 20.97 14.31 17.14 16.52L14.05 18.3L10.96 20.08C7.13 22.29 4 20.48 4 16.06V12.5Z"
+                          fill="#7C74EE"
+                          stroke="#7C74EE"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></a>
+                  </button>
+
+                  <a class="chart__item--artist" href="#"
+                    >Seven (feat. Latto) [Explicit]...</a
+                  >
+                  <a class="chart__item--song" href="#"
+                    >Jung Kook, Latto • 3:04</a
+                  >
+                </li>
+                <li class="chart__item--item">
+                  <button class="chart__item--btn">
+                    <p class="chart__item--num">2</p>
+                    <a
+                      href="#"
+                      aria-label="Link to Play page"
+                      class="chart__item--icon"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        fill="none"
+                      >
+                        <path
+                          d="M4 12.5V8.93999C4 4.51999 7.13 2.70999 10.96 4.91999L14.05 6.69999L17.14 8.47999C20.97 10.69 20.97 14.31 17.14 16.52L14.05 18.3L10.96 20.08C7.13 22.29 4 20.48 4 16.06V12.5Z"
+                          fill="#7C74EE"
+                          stroke="#7C74EE"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></a>
+                  </button>
+
+                  <a class="chart__item--artist" href="#">Super Shy</a>
+                  <a class="chart__item--song" href="#">NewJeans • 2:34</a>
+                </li>
+                <li class="chart__item--item">
+                  <button class="chart__item--btn">
+                    <p class="chart__item--num">3</p>
+                    <a
+                      href="#"
+                      aria-label="Link to Play page"
+                      class="chart__item--icon"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        fill="none"
+                      >
+                        <path
+                          d="M4 12.5V8.93999C4 4.51999 7.13 2.70999 10.96 4.91999L14.05 6.69999L17.14 8.47999C20.97 10.69 20.97 14.31 17.14 16.52L14.05 18.3L10.96 20.08C7.13 22.29 4 20.48 4 16.06V12.5Z"
+                          fill="#7C74EE"
+                          stroke="#7C74EE"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></a>
+                  </button>
+
+                  <a class="chart__item--artist" href="#"
+                    >Somebody’s Pleasure</a
+                  >
+                  <a class="chart__item--song" href="#">Aziz Hedra • 3:44</a>
+                </li>
+                <li class="chart__item--item">
+                  <button class="chart__item--btn">
+                    <p class="chart__item--num">4</p>
+                    <a
+                      href="#"
+                      aria-label="Link to Play page"
+                      class="chart__item--icon"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        fill="none"
+                      >
+                        <path
+                          d="M4 12.5V8.93999C4 4.51999 7.13 2.70999 10.96 4.91999L14.05 6.69999L17.14 8.47999C20.97 10.69 20.97 14.31 17.14 16.52L14.05 18.3L10.96 20.08C7.13 22.29 4 20.48 4 16.06V12.5Z"
+                          fill="#7C74EE"
+                          stroke="#7C74EE"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></a>
+                  </button>
+
+                  <a class="chart__item--artist" href="#">Tally</a>
+                  <a class="chart__item--song" href="#">BLACKPINK • 3:04</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button aria-label="Next" class="next-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M8.91003 19.92L15.43 13.4C16.2 12.63 16.2 11.37 15.43 10.6L8.91003 4.07999"
+                stroke="#666666"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
         </div>
       </section>
       <!-- Album Section -->
       <section class="album">
         <div class="flex-between">
           <h1 class="font-primary f-weight-500">Top Album</h1>
-          <a href="" class="btn-purple">View all</a>
+          <a href="#" class="btn-purple">View all</a>
+        </div>
+        <div class="album__container">
+          <ul class="album__list">
+            <!-- Album Item 1-->
+            <li class="album__item">
+              <figure class="album__figure">
+                <a
+                  class="album__image"
+                  style="background-image: url('./assets/images/album-1.webp')"
+                  role="img"
+                  aria-label="Artist image"
+                ></a>
+                <figcaption class="album__caption">
+                  <a class="f-weight-500 font-secondary" href="#"
+                    >Just A Light Away</a
+                  >
+                  <a class="f-grey f-weight-500 font-tertiary" href="#"
+                    >Claudine Lofaso</a
+                  >
+                </figcaption>
+              </figure>
+            </li>
+
+            <!-- Album Item 2-->
+            <li class="album__item">
+              <figure class="album__figure">
+                <a
+                  class="album__image"
+                  style="background-image: url('./assets/images/album-2.webp')"
+                  role="img"
+                  aria-label="Artist image"
+                  href="#"
+                ></a>
+                <figcaption class="album__caption">
+                  <a class="f-weight-500 font-secondary" href="#"
+                    >Shifts Of Magnet</a
+                  >
+                  <a class="f-grey f-weight-500 font-tertiary" href="#"
+                    >Marwa Gavett
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+            <!-- Album Item 3-->
+            <li class="album__item">
+              <figure class="album__figure">
+                <a
+                  class="album__image"
+                  style="background-image: url('./assets/images/album-3.webp')"
+                  role="img"
+                  aria-label="Artist image"
+                ></a>
+                <figcaption class="album__caption">
+                  <a class="f-weight-500 font-secondary" href="#"
+                    >Boisterous Nirvana</a
+                  >
+                  <a class="f-grey f-weight-500 font-tertiary" href="#"
+                    >Ela Delcampo
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+            <!-- Album Item 4-->
+            <li class="album__item">
+              <figure class="album__figure">
+                <a
+                  class="album__image"
+                  style="background-image: url('./assets/images/album-4.webp')"
+                  role="img"
+                  aria-label="Artist image"
+                ></a>
+                <figcaption class="album__caption">
+                  <a class="f-weight-500 font-secondary" href="#"
+                    >Tales Of The Gray Fan</a
+                  >
+                  <a class="f-grey f-weight-500 font-tertiary" href="#"
+                    >Wendy Herout
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+            <!-- Album Item 5-->
+            <li class="album__item">
+              <figure class="album__figure">
+                <a
+                  class="album__image"
+                  style="background-image: url('./assets/images/album-5.webp')"
+                  role="img"
+                  aria-label="Artist image"
+                ></a>
+                <figcaption class="album__caption">
+                  <a class="f-weight-500 font-secondary" href="#"
+                    >Hyperspace Playdate</a
+                  >
+                  <a class="f-grey f-weight-500 font-tertiary" href="#"
+                    >Karmen Adinolfi
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+            <!-- Album Item 6-->
+            <li class="album__item">
+              <figure class="album__figure">
+                <a
+                  class="album__image"
+                  href="#"
+                  style="background-image: url('./assets/images/album-6.webp')"
+                  aria-label="Artist image"
+                ></a>
+                <figcaption class="album__caption">
+                  <a class="f-weight-500 font-secondary" href="#">Enjoy Luck</a>
+                  <a class="f-grey f-weight-500 font-tertiary" href="#"
+                    >Andre Yeddo
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
         </div>
       </section>
+      <!-- Music Player-->
+      <aside class="player">
+        <div class="player__song">
+          <img
+            src="./assets/images/discover-1.webp"
+            alt="artist image"
+            class="player__image"
+          />
+          <p class="f-weight-500 player__song--name">Jiwa yang Bersedih</p>
+          <p class="f-grey-3 f-weight-500 player__song--artist">
+            Ghea Indrawati
+          </p>
+        </div>
+        <!-- Player Control-->
+        <div class="player__control">
+          <!-- Player Control Buttons-->
+          <div class="player__control--btns-group">
+            <button aria-label="Shuffle" class="player__control--btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+              >
+                <path
+                  d="M22.25 17.98C22.25 17.96 22.24 17.94 22.24 17.92C22.23 17.84 22.22 17.76 22.19 17.69C22.15 17.6 22.1 17.53 22.04 17.46C22.04 17.46 22.04 17.45 22.03 17.45C21.96 17.38 21.88 17.33 21.79 17.29C21.7 17.25 21.6 17.23 21.5 17.23L16.83 17.25C16.83 17.25 16.83 17.25 16.82 17.25C16.22 17.25 15.64 16.97 15.28 16.49L14.06 14.92C13.81 14.59 13.34 14.53 13.01 14.79C12.68 15.05 12.62 15.51 12.88 15.84L14.1 17.41C14.75 18.25 15.77 18.75 16.83 18.75H16.84L19.69 18.74L18.98 19.45C18.69 19.74 18.69 20.22 18.98 20.51C19.13 20.66 19.32 20.73 19.51 20.73C19.7 20.73 19.89 20.66 20.04 20.51L22.04 18.51C22.11 18.44 22.16 18.36 22.2 18.27C22.23 18.17 22.25 18.07 22.25 17.98Z"
+                  fill="#121212"
+                />
+                <path
+                  d="M8.92 6.69001C8.27 5.79001 7.23 5.26001 6.12 5.26001C6.11 5.26001 6.11 5.26001 6.1 5.26001L3.5 5.27001C3.09 5.27001 2.75 5.61001 2.75 6.02001C2.75 6.43001 3.09 6.77001 3.5 6.77001L6.11 6.76001H6.12C6.75 6.76001 7.34 7.06001 7.7 7.57001L8.78 9.07001C8.93 9.27001 9.16 9.38001 9.39 9.38001C9.54 9.38001 9.7 9.33001 9.83 9.24001C10.17 8.99001 10.24 8.52001 10 8.19001L8.92 6.69001Z"
+                  fill="#121212"
+                />
+                <path
+                  d="M22.24 6.07997C22.24 6.05997 22.25 6.03997 22.25 6.02997C22.25 5.92997 22.23 5.82997 22.19 5.73997C22.15 5.64997 22.1 5.56997 22.03 5.49997L20.03 3.49997C19.74 3.20997 19.26 3.20997 18.97 3.49997C18.68 3.78997 18.68 4.26997 18.97 4.55997L19.68 5.26997L16.95 5.25997C16.94 5.25997 16.94 5.25997 16.93 5.25997C15.78 5.25997 14.7 5.82997 14.06 6.79997L7.67 16.38C7.31 16.92 6.7 17.25 6.05 17.25H6.04L3.5 17.23C3.09 17.23 2.75 17.56 2.75 17.98C2.75 18.39 3.08 18.73 3.5 18.73L6.05 18.74C6.06 18.74 6.06 18.74 6.07 18.74C7.23 18.74 8.3 18.17 8.94 17.2L15.33 7.61997C15.69 7.07997 16.3 6.74997 16.95 6.74997H16.96L21.5 6.76997C21.6 6.76997 21.69 6.74997 21.79 6.70997C21.88 6.66997 21.96 6.61997 22.03 6.54997C22.03 6.54997 22.03 6.53997 22.04 6.53997C22.1 6.46997 22.16 6.39997 22.19 6.30997C22.22 6.23997 22.23 6.15997 22.24 6.07997Z"
+                  fill="#121212"
+                />
+              </svg></button
+            ><button aria-label="Previous" class="player__control--btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+              >
+                <path
+                  d="M20.74 7.22V16.79C20.74 18.75 18.61 19.98 16.91 19L12.76 16.61L8.60996 14.21C6.90996 13.23 6.90996 10.78 8.60996 9.8L12.76 7.4L16.91 5.01C18.61 4.03 20.74 5.25 20.74 7.22Z"
+                  fill="#121212"
+                />
+                <path
+                  d="M4.26001 18.93C3.85001 18.93 3.51001 18.59 3.51001 18.18V5.82001C3.51001 5.41001 3.85001 5.07001 4.26001 5.07001C4.67001 5.07001 5.01001 5.41001 5.01001 5.82001V18.18C5.01001 18.59 4.67001 18.93 4.26001 18.93Z"
+                  fill="#121212"
+                />
+              </svg></button
+            ><button
+              aria-label="Pause/Play"
+              class="player__control--btn play-btn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="20"
+                viewBox="0 0 21 20"
+                fill="none"
+              >
+                <path
+                  d="M9.375 15.925V4.075C9.375 2.95 8.9 2.5 7.7 2.5H4.675C3.475 2.5 3 2.95 3 4.075V15.925C3 17.05 3.475 17.5 4.675 17.5H7.7C8.9 17.5 9.375 17.05 9.375 15.925Z"
+                  fill="white"
+                />
+                <path
+                  d="M18 15.925V4.075C18 2.95 17.525 2.5 16.325 2.5H13.3C12.1083 2.5 11.625 2.95 11.625 4.075V15.925C11.625 17.05 12.1 17.5 13.3 17.5H16.325C17.525 17.5 18 17.05 18 15.925Z"
+                  fill="white"
+                />
+              </svg></button
+            ><button aria-label="Next" class="player__control--btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+              >
+                <path
+                  d="M4.26001 7.22V16.79C4.26001 18.75 6.39001 19.98 8.09001 19L12.24 16.61L16.39 14.21C18.09 13.23 18.09 10.78 16.39 9.8L12.24 7.4L8.09001 5.01C6.39001 4.03 4.26001 5.25 4.26001 7.22Z"
+                  fill="#121212"
+                />
+                <path
+                  d="M20.74 18.93C20.33 18.93 19.99 18.59 19.99 18.18V5.82001C19.99 5.41001 20.33 5.07001 20.74 5.07001C21.15 5.07001 21.49 5.41001 21.49 5.82001V18.18C21.49 18.59 21.16 18.93 20.74 18.93Z"
+                  fill="#121212"
+                />
+              </svg></button
+            ><button aria-label="Repeat" class="player__control--btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+              >
+                <path
+                  d="M14.5 3L16.94 5.34003L8.98999 5.32001C5.41999 5.32001 2.48999 8.25003 2.48999 11.84C2.48999 13.63 3.21999 15.26 4.39999 16.44"
+                  stroke="#121212"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10.5001 21L8.06006 18.66L16.0101 18.68C19.5801 18.68 22.5101 15.75 22.5101 12.16C22.5101 10.37 21.7801 8.74 20.6001 7.56"
+                  stroke="#121212"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12.75 14.67V9.33002L11.25 11"
+                  stroke="#121212"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <!-- Player Control Progress-->
+          <div class="player__control--progress">
+            <span role="timer" ="f-small f-weight-500">1:29</span>
+            <div
+              role="slider"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="48"
+              aria-valuetext="Volume value"
+              class="player__control--bar"
+              aria-label="Volume Slider"
+            ></div>
+            <span role="timer" class="f-small f-weight-500">4:24</span>
+          </div>
+        </div>
+        <!-- Player Options-->
+        <div class="player__options">
+          <button aria-label="Favourite" class="player__options--btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+            >
+              <path
+                d="M12.62 21.31C12.28 21.43 11.72 21.43 11.38 21.31C8.48 20.32 2 16.19 2 9.18998C2 6.09998 4.49 3.59998 7.56 3.59998C9.38 3.59998 10.99 4.47998 12 5.83998C13.01 4.47998 14.63 3.59998 16.44 3.59998C19.51 3.59998 22 6.09998 22 9.18998C22 16.19 15.52 20.32 12.62 21.31Z"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button aria-label="Volume" class="player__options--btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+            >
+              <path
+                d="M2 10.5V14.5C2 16.5 3 17.5 5 17.5H6.43C6.8 17.5 7.17 17.61 7.49 17.8L10.41 19.63C12.93 21.21 15 20.06 15 17.09V7.90997C15 4.92997 12.93 3.78997 10.41 5.36997L7.49 7.19997C7.17 7.38997 6.8 7.49997 6.43 7.49997H5C3 7.49997 2 8.49997 2 10.5Z"
+                stroke-width="1.5"
+              />
+              <path
+                d="M18 8.5C19.78 10.87 19.78 14.13 18 16.5"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M19.83 6C22.72 9.85 22.72 15.15 19.83 19"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <span class="player__options--bar">
+            <span
+              class="player__options--progress"
+              role="slider"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="48"
+              aria-valuetext="Volume value"
+              aria-label="Volume Slider"
+            ></span>
+          </span>
+          <button aria-label="Task list" class="player__options--btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+            >
+              <path
+                d="M12.37 9.38H17.62"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6.38 9.38L7.13 10.13L9.38 7.88"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12.37 16.38H17.62"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6.38 16.38L7.13 17.13L9.38 14.88"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M9 22.5H15C20 22.5 22 20.5 22 15.5V9.5C22 4.5 20 2.5 15 2.5H9C4 2.5 2 4.5 2 9.5V15.5C2 20.5 4 22.5 9 22.5Z"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </aside>
     </main>
   </body>
 </html>

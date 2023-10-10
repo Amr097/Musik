@@ -2,7 +2,12 @@ $bg-color-1: #ffff;
 $gray: #dadada;
 $gray-2: #b9b9b9;
 $gray-3: #b5b5b5;
+$gray-4: #6b6b6b;
+$gray-opacity: #b9b9b92b;
 $purple-1: #7c74ee;
+$purple-2: #8568f5;
+$black: #121212;
+$bg-gray: rgba(197, 192, 192, 0.4);
 
 $gradient-primary: linear-gradient(90deg, #39cabd 0%, #4ab5ca 66.77%);
 $gradient-secondary: linear-gradient(
@@ -24,5 +29,20 @@ $gradient-secondary-3: linear-gradient(
   #8568f5 111.92%
 );
 
+$gradient-tertiary: linear-gradient(
+  180deg,
+  rgba(0, 0, 0, 0) 16.25%,
+  rgba(0, 0, 0, 0.31) 43.48%,
+  rgba(0, 0, 0, 0.61) 60.81%,
+  rgba(0, 0, 0, 0.88) 77.05%,
+  #000 90.75%
+);
+
 $font-primary: "Montserrat", sans-serif;
 $font-secondary: "Work Sans", sans-serif;
+
+$margin-top: 2.4rem;
+
+:root {
+  --music-bar-width: 15em;
+}

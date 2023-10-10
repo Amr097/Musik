@@ -1,0 +1,173 @@
+.chart {
+  font-size: 1rem;
+  margin-top: $margin-top;
+
+  @media screen and (width<=52.3125em) {
+    font-size: 0.9rem;
+  }
+
+  @media screen and (width<=47.3125em) {
+    font-size: 0.8rem;
+  }
+
+  &__container {
+    margin-top: $margin-top;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+
+    @media screen and (width<=43.125em) {
+      font-size: 1rem;
+      flex-direction: column;
+    }
+
+    @media screen and (width<=43.125em) {
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    &--list {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+    &--item {
+      display: grid;
+      grid-template-columns: 4em 1fr;
+      grid-template-rows: repeat(2, max-content);
+      grid-column-gap: 1.2em;
+      padding: 1.2em;
+      border-radius: 1.2em;
+      position: relative;
+
+      @media screen and (width<=43.125em) {
+        padding: 1.2em 0;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        height: 0;
+        width: 2%;
+        border-radius: 1.2em;
+        background-color: rgba(124, 116, 238, 0.1);
+        transition: height 0.3s ease-in-out, width 0.35s ease-in-out 0.35s;
+        z-index: -1;
+      }
+      &:hover::before {
+        height: 100%;
+        width: 100%;
+      }
+      &:hover .chart__item--btn .chart__item--num {
+        scale: 0;
+      }
+      &:hover .chart__item--btn .chart__item--icon {
+        scale: 1;
+        transition: scale 0.2s ease-in-out 0.3s;
+      }
+    }
+    &--btn {
+      grid-column: 1 / span 1;
+      grid-row: 1/ -1;
+      justify-self: center;
+      align-self: center;
+      position: relative;
+    }
+
+    &--num {
+      color: $black;
+      font-size: 2em;
+      font-weight: 500;
+      transition: scale 0.2s ease-in-out;
+
+      @media screen and (width<=43.125em) {
+        font-size: 1.4em;
+      }
+    }
+
+    &--artist {
+      grid-column: 2 / span 1;
+      color: #121212;
+      font-size: 1.6em;
+      font-weight: 500;
+      &:hover {
+        filter: brightness(127%) !important;
+      }
+    }
+    &--song {
+      grid-column: 2 / span 1;
+      color: $gray-4;
+      font-family: Montserrat;
+      font-size: 1.4em;
+      font-weight: 500;
+      &:hover {
+        filter: brightness(127%) !important;
+      }
+    }
+    &--icon {
+      position: absolute;
+      inset: 0;
+      margin: 0 auto;
+      scale: 0;
+    }
+  }
+  &__figure {
+    position: relative;
+    @media screen and (width<=43.125em) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 23em;
+      height: 22.5em;
+    }
+  }
+  &__image {
+    width: 17em;
+    height: 100%;
+    border-radius: 1.2em;
+    object-fit: cover;
+
+    @media screen and (width<=43.125em) {
+      width: 100%;
+    }
+  }
+
+  &__link {
+    @media screen and (width<=43.125em) {
+      max-width: 23em;
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    bottom: 0.75em;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.8em;
+    font-weight: 700;
+    width: max-content;
+  }
+
+  &__filter {
+    width: 17em;
+    height: 100%;
+    border-radius: 1.2em;
+    position: absolute;
+    inset: 0;
+    margin: 0 auto;
+    background: $gradient-tertiary;
+
+    @media screen and (width<=43.125em) {
+      width: 100%;
+    }
+  }
+}

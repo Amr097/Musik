@@ -1,17 +1,61 @@
-/* Error: Undefined variable.
- *    ,
- * 35 |           background: $gradient-primary;
- *    |                       ^^^^^^^^^^^^^^^^^
- *    '
- *   styles\layouts\sidebar.scss 35:23  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 35 \2502            background: $gradient-primary;\d\a    \2502                        ^^^^^^^^^^^^^^^^^\a    \2575 \a   styles\\layouts\\sidebar.scss 35:23  root stylesheet";
+.sidebar {
+  font-size: 2.4rem;
+  grid-column: 1/span 1;
+  grid-row: 1/-1;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.12);
+  height: 100vh;
+  height: 100%;
+  padding: 3.2rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
 }
+.sidebar .nav {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.sidebar .nav .nav__list {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+}
+.sidebar .nav .nav__list--title {
+  margin: 1rem 0 1.7rem;
+}
+.sidebar .nav .nav__list--item {
+  padding: 2rem 2.4rem;
+  position: relative;
+  border-radius: 1.2rem;
+}
+.sidebar .nav .nav__list--item::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 1.2rem;
+  background: linear-gradient(90deg, #3dc3c0 -15.19%, #8568f5 111.92%);
+  inset: 0;
+  scale: 1 0;
+  transition: all 350ms;
+  transform-origin: top;
+}
+.sidebar .nav .nav__list--item a {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.sidebar .nav .nav__list--item a svg {
+  fill: none;
+}
+.sidebar .nav .nav__list--item:hover a {
+  color: white;
+}
+.sidebar .nav .nav__list--item:hover a svg {
+  fill: white;
+}
+.sidebar .nav .nav__list--item:hover::after, .sidebar .nav .nav__list--item:focus-visible::after {
+  scale: 1 1;
+  transform-origin: bottom;
+}
+
+/*# sourceMappingURL=sidebar.css.map */

@@ -12,15 +12,33 @@
 }
 
 .font-secondary {
-  font-size: 1.6rem;
+  font-size: 1.45rem;
+  &:hover {
+    filter: brightness(127%) !important;
+  }
 }
 
 .font-tertiary {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  &:hover {
+    filter: brightness(127%) !important;
+  }
+}
+
+.f-small {
+  font-size: 1.25em;
 }
 
 .f-grey {
   color: #6b6b6b;
+}
+
+.f-grey-2 {
+  color: #999;
+}
+
+.f-grey-3 {
+  color: #8e8e8e;
 }
 
 .f-weight-500 {
