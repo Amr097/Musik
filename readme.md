@@ -5,13 +5,13 @@
 <p align="center"></p>
 
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Amr097/Musik">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Amr097/Musiverse">
 
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Amr097/Musik">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Amr097/Musiverse">
 
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Amr097/Musik">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Amr097/Musiverse">
 
-  <img alt="GitHub issues" src="https://img.shields.io/github/issues/Amr097/Musik">
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues/Amr097/Musiverse">
 
 </p>
 
@@ -23,7 +23,7 @@
 </p>
 
 <p align="center">
-  <button><a href="https://amr097.github.io/Musik/"><img alt="Demo" src="./assets/images/view-demo-button.png" target="_blank"></img></a></button>
+  <button><a href="https://amr097.github.io/Musiverse/"><img alt="Demo" src="./assets/images/view-demo-button.png" target="_blank"></img></a></button>
 
 ## 🚀 Technologies
 
@@ -46,6 +46,10 @@
 - Clean, well-structured and easy to modify / maintain code.
 
 - Used BEM methodology for organizing and naming CSS classes.
+
+## 🕯️ Lighthouse Score
+
+<img alt="lighthouse" src="./assets/images/lighthouse.png" target="_blank"></img>
 
 ## 🐢 Getting started
 
