@@ -47,6 +47,8 @@
 
 - Used BEM methodology for organizing and naming CSS classes.
 
+- Used Container queries & Media queries for responsiveness.
+
 ## 🕯️ Lighthouse Score
 
 <img alt="lighthouse" src="./assets/images/lighthouse.png" target="_blank"></img>
